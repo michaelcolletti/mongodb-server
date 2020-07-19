@@ -5,7 +5,7 @@
 #
 
 # Pull base image.
-FROM ubuntu:latest
+FROM alpine
 
 # Install MongoDB.
 RUN \
