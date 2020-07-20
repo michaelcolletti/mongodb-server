@@ -1,7 +1,7 @@
 #
 # MongoDB Dockerfile
 #
-# https://github.com/dockerfile/mongodb
+# From https://github.com/dockerfile/mongodb
 #
 
 # Pull base image.
@@ -9,7 +9,6 @@ FROM ubuntu:latest
 
 # Install MongoDB.
 RUN \
-  apk add --no-cache  --update mongodb mongodb-org \
   apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv 7F0CEB10 && \
   echo 'deb http://downloads-distro.mongodb.org/repo/ubuntu-upstart dist 10gen' > /etc/apt/sources.list.d/mongodb.list && \
   apt-get install gnupg gnupg1 gnupg2 &&  apt-get update -y  && apt-get install -y mongodb-org && \
