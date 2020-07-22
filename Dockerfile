@@ -5,7 +5,7 @@
 #
 
 # Pull base image.
-FROM mongodb
+FROM mongo
 
 # Define mountable directories.
 VOLUME ["/data/db"]
